@@ -5,31 +5,176 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Website</title>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1>Welcome to My Website</h1>
-            <nav>
+        <div class = "background-div">
+            <nav id="navbar">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
-            <section id="home">
-                <h2>Home</h2>
-                <p>This is the home section of my website.</p>
-            </section>
-            <section id="about">
-                <h2>About</h2>
-                <p>This section contains information about me.</p>
-            </section>
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>You can contact me at</p>s
-            </section>
-        </main>
+
+            <div class="content">
+                <header>
+                    <h1>Dylan Caddick</h1>
+                </header>
+                <main>
+                    <section id="about">
+                        <h2>About Me </h2>
+                        <ul>
+                            <li><b>Name:</b> Dylan Caddick</li>
+                            <li><b>University:</b> University of Manchester</li>
+                            <li><b>Major:</b> Computer Science with IE (4th Year)</li>
+                            <ul>
+                                <li><b>Year 1:</b> 79%</li>
+                                <li><b>Year 2:</b> 73%</li>
+                                <li><b>Placement (Year 3):</b> Software Engineer @ Electronic Arts (Playdemic)</li>
+                                <li style="color: #FF0000;"><b>Year 4:</b> Currently studying</li>
+                            </ul>
+                            <li><b>Occupation:</b> Part-time Software Engineer @ EA Playdemic</li>
+                        </ul>
+                        <h3>A bit more...</h3>
+                        <p>I love sports. I do lot of running, football and gym. And seem to also really enjoy signing up to stupid sport events. I also have a dog with a very unique name... Aswell. I find bio-inspired technology really interesting and exciting. Additionally, gaming has always been a fun time for me whether it's for the social aspect or the gameplay itself.</p>
+                    </section>
+                    <section id="projects">
+                        <h2>Projects</h2>
+                        <div>
+                            <h3>Photolite</h3>
+                            <p><b>Overview:</b> Photoline is a collaborative timeline application designed to help users document and share life's milestones and events, functioning as a modern, interactive photo album. Developed during my first hackathon as a team of four, the project required rapidly adapting to a new technology stack to deliver a sleek, fully functional, and production-ready application.</p>
+                            <p><b>Frontend:</b> React, PrimeReact</p>
+                            <p><b>Backend:</b> Go</p>
+                            <p><b>Key Features:</b></p>
+                            <ul>
+                                <li><b>Interactive Timeline:</b> Users can log 'memories' as chronological nodes containing titles, dates, rich descriptions, and photo galleries. Clicking a node expands the memory for a detailed view.</li>
+                                <li><b>Social Collaboration:</b> Integrated a unique friend-code system, enabling users to tag friends in shared experiences. Shared memories automatically populate across all tagged users' timelines, allowing mutual photo contributions.</li>
+                                <li><b>Privacy Controls:</b> Implemented granular privacy settings so users can maintain personal, hidden photos within a shared memory while keeping the rest of the gallery public to collaborators.</li>
+                            </ul>
+                            <p><b>Outcome:</b>Successfully delivered a complete, user-ready application within the strict time constraints of the hackathon, demonstrating strong teamwork, adaptability, and technical proficiency in both frontend and backend development.</p>
+                            <p><b>Video:</b></p>
+                            <video width="100%" controls style="border-radius: 8px; margin-top: 10px;">
+                                <source src="photolite.mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <h3>Evogen</h3>
+                            <p><b>Overview:</b>Evogen was a Unity-based simulation project developed for my A-level coursework inspired by genetic algorithms and natural evolution, with a purpose of being educational. It involved mimicking biological processes. It involved creating a tiled work with food, water and obstacles. Rabbits would randomly spawn onto the map and have to survive, adapt and reproduce.
+                            Each rabbit had unique traits that influenced its survival chances, overtime more favourable traits would be passed down due to Survival of the Fitness. The gene pool would reduce and the rabbit population would oscillate around a stable equilibrium.</p>
+                            <p><b>Language:</b>Unity C#</p>
+                            <p><b>Key Features:</b></p>
+                            <ul>
+                                <li><b>Genetic Algorithms:</b> Implemented a genetic algorithm to simulate natural selection and evolution.</li>
+                                <li><b>Trait Inheritance:</b> Each rabbit had unique traits that influenced its survival chances, and over time, more favorable traits were passed down to subsequent generations.</li>
+                                <li><b>Procedural Generation of Environment:</b> Used Perlin noise to procedurally generate the environment for land and water. Additionally, food and trees would placed randomly on the map. This made the simulation more dynamic and showed how terrain could affect survival.</li>
+                            </ul>
+                            <p><b>Outcome:</b>Successfully completed the project within the deadline and achieved full-marks. Future aim of adding other predators such as foxes into the ecosystem to simulate a predator-prey relationship.</p>
+                        </div>
+                        
+
+
+                    </section>
+                    <section id="experience">
+                        <h2>Experience</h2>
+                        <div>
+                            <h3>Electronic Arts - EA Playdemic</h3>
+                            <p><b>Role:</b> Software Engineer</p>
+                            <p><b>Duration:</b> July 2025 - Present</p>
+                            <p><b>Location:</b> Manchester, UK</p>
+                            <p>Software Engineer for Playdemic EA, working on Golf Clash - an award-winning title and one of the world's highest-grossing sports mobile games.
+                            <ul>
+                                <li>Led backend server development (C#) for Clan World Tours, engineering complex matchmaking, scoring, and currency systems</li>
+                                <li>Developed microservices using AWS (Lambdas, Step Functions, S3) to efficiently support a massive, real-time global player base</li>
+                                <li>Pioneered the first server-side unit testing</li>
+                                <li>Maintained and extended internal Customer Service and Testing web tools, improving operational efficiency for live services</li>
+                                <li>Recognized as a finalist for the Mobile Game Awards 2026 'Rising Star' and awarded Playdemic 'Employee of the Month' twice for rapid upskilling and feature delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Tennis Coach</h3>
+                            <p><b>Role:</b> Tennis Coach</p>
+                            <p><b>Duration:</b> Sep 2020 - July 2025</p>
+                            <p><b>Location:</b> Brighton, UK</p>
+                            <p>Providing quality and friendly tennis coaching to all ages, including all-inclusive sessions, for an award winning coaching team. I was responsible for lesson planning, group/individual training, tournaments and supervision of new
+coaches.
+                        </div>
+                    </section>
+                    <section id="education">
+                        <h2>Education</h2>
+                        <p>This section contains information about my education.</p>
+                        <div>
+                            <h3>University of Manchester</h3>
+                            <p><b>Degree:</b> BSc Computer Science with Industrial Experience</p>
+                            <p><b>Duration:</b> 2022 - 2026</p>
+                            <p><b>Location:</b> Manchester, UK</p>
+                            <p>Grades:</p>
+                            <ul>
+                                <li><b>Year 1:</b> 79%</li>
+                                <li><b>Year 2:</b> 73%</li>
+                                <li><b>Placement (Year 3):</b> Software Engineer @ Electronic Arts (Playdemic)</li>
+                                <li style="color: #FF0000;"><b>Year 4:</b> Currently studying</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Brighton Hove and Sussex Sixth Form College</h3>
+                            <p><b>Qualification:</b> A-Levels</p>
+                            <p><b>Duration:</b> 2020 - 2022</p>
+                            <p><b>Location:</b> Brighton, UK</p>
+                            <p>Grades:</p>
+                            <ul>
+                                <li>Computer Science: A*</li>
+                                <li>Maths: A*</li>
+                                <li>Biology: A*</li>
+                                <li>AS Further Maths: A</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Dorothy Stringer School</h3>
+                            <p><b>Qualification:</b> GCSEs</p>
+                            <p><b>Duration:</b> 2015 - 2020</p>
+                            <p><b>Location:</b> Brighton, UK</p>
+                            <p>Grades:</p>
+                            <ul>
+                                <li>Maths: 9</li>
+                                <li>Computer Science: 9</li>
+                                <li>Science: 99</li>
+                                <li>History: 9</li>
+                                <li>Religious Studies: 7</li>
+                                <li>English Language: 7</li>
+                                <li>English Literature: 6</li>
+                                <li>Music Performance: Distinction</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="Achievements">
+                        <h2>Achievements</h2>
+                        <p>This section contains information about my achievements.</p>
+                        <ul>
+                            <li>Recognized as a finalist for the Mobile Game Awards 2026 'Rising Star'</li>
+                            <li>Awarded Playdemic 'Employee of the Month' twice for rapid upskilling and feature delivery</li>
+                            <li>Manchester Marathon 2025</li>
+                            <li>Outlaw 70.3 Half Ironman 2026</li>
+                            <li>Average of 3.8 grades higher per subject than predicted grades (GCSEs). Making the local newspaper, The Argus</li>
+                        </ul>
+                    </section>
+                    <section id="contact">
+                        <h2>Contact</h2>
+                        <p>You can contact me at:</p>
+                        <ul>
+                            <li>Email: <a href="mailto:dylanx@virginmedia.com">dylanx@virginmedia.com</a></li>
+                            <li>LinkedIn: <a href="https://www.linkedin.com/in/dylancaddick/" target="_blank">https://www.linkedin.com/in/dylancaddick/</a></li>
+                            <li>GitHub: <a href="https://github.com/dylanc123" target="_blank">https://github.com/dylanc123</a></li>
+                        </ul>
+                        CV: <a href="Dylan_Caddick_CV.pdf" target="_blank">Download CV</a>
+   
+                    </section>
+                </main>
+            </div>
+        </div>
     </body>
 </html>
